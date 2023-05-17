@@ -4,7 +4,6 @@ from time import sleep
 
 
 
-max_punkty = 25
 
 
 
@@ -19,17 +18,21 @@ def startGry():
     else:
         print("Zła opcja")
         sleep(2)
-        startGry()
-        
-        
+        startGry()    
 def gra():
+    pytaniaZuzyte = []        
     twoje_punkty = 0
     max_punkty = 25
     
     for x in range(max_punkty):
+        print(x)
         random_question = choice(pytania)
+        
+        while random_question in pytaniaZuzyte:
+            random_question = choice(pytania)
+        
+        
         question_text = random_question["pytanie"]
-
         print(question_text)
 
         for index, answer in enumerate(random_question["odpowiedzi"]):
@@ -38,7 +41,7 @@ def gra():
         odpowiedz = input("Twoja odpowiedź to: \n")
         is_correct = False
         for answer in random_question["odpowiedzi"]:
-            if odpowiedz == answer['text']:
+            if odpowiedz.lower() == answer['text'].lower():
                 is_correct = answer['poprawne']
                 break
 
@@ -46,9 +49,9 @@ def gra():
             print("Poprawna odpowiedź")
             twoje_punkty += 1
         else:
-            print(f"Niepoprawna odpowiedź, twoja ilość punktów to: {twoje_punkty} / {max_punkty}")
-            startGry()
-
+            print("Niepoprawna odpowiedź")
+        pytaniaZuzyte.append(random_question)
+    print(f"Twoja ilosc puntkow: {twoje_punkty} / {max_punkty}")
     if twoje_punkty == max_punkty:
         print("Wygrałeś, zdobyłeś maksymalną ilość punktów")
 
