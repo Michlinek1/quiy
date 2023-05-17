@@ -54,12 +54,12 @@ pytania = [
         ]
     },
     {
-        "pytanie": "Która firma jest wydawcą gry CS:GO?",
+        "pytanie": "Jaka skórka jest najdroższa w grze CS:GO",
         "odpowiedzi": [
-            {"text": "Valve Corporation", "poprawne": True},
-            {"text": "Blizzard Entertainment", "poprawne": False},
-            {"text":"Riot Games", "poprawne": False},
-            {"text": "Electronic Arts", "poprawne": False}
+            {"text": "Desert Eagle - Blaze", "poprawne": False},
+            {"text": "Karambit - Case Hardened (Blue Gem)", "poprawne": True},
+            {"text":  "AWP - Dragon Lore", "poprawne": False},
+            {"text": "AK-47 - Elite Build", "poprawne": False}
         ]
     },
     {
@@ -72,12 +72,12 @@ pytania = [
         ]
     },
     {
-        "pytanie": "Jaka jest nazwa pierwszego turnieju organizowanego dla gry CS:GO?",
+        "pytanie": "Jak sie nazywała pierwsza operacja w CS:GO?",
         "odpowiedzi": [
-            {"text": "CS:GO Major Championship", "poprawne": False},
-            {"text": "DreamHack Winter 2012", "poprawne": True},
-            {"text": "ESL One Cologne", "poprawne": False},
-            {"text": "IEM Katowice", "poprawne": False}
+            {"text": "Operation Payback", "poprawne": True},
+            {"text": "Operation Shattered Web", "poprawne": False},
+            {"text": "Operation Hydra", "poprawne": False},
+            {"text": "Operation Ancient", "poprawne": False}
         ]
     },
     {
@@ -213,6 +213,15 @@ pytania = [
             {"text": "Reinhardt", "poprawne": False},
             {"text": "Genji", "poprawne": False},
             {"text": "Mei", "poprawne": False}
+        ]
+    },
+    {
+        "pytanie": "Kto jest najlepszym graczem League of Legends?",
+        "odpowiedzi": [
+            {"text": "Faker", "poprawne": True},
+            {"text": "Rybson", "poprawne": False},
+            {"text": "Lewus", "poprawne": False},
+            {"text": "Xayoo", "poprawne": False}
         ]
     }
 ]
